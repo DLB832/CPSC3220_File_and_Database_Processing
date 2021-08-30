@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--Author: Derek Campbell & Alexander Allen
+    Date: August 26, 2021
+    File: arrayDemo.html
+    Purpose: To create a fillable form for the user to demonstrate 2 dimensional arrays-->
+
+<html>
+    <head>
+        <title>Array Demo</title> <!-- Sets the title in the window-->
+    </head>    
+    <body>
+        <h1>Array Demo</h1>
+            <p>
+                <!--uses a form to ask for input for:
+                number of rows,
+                number of columns,
+                minimum random value
+                maximum random value-->
+                <!--TODO: form needs to hav a reset button and a submit button.-->
+                <!--NOTE: submit button takes user to arrayDemo.php-->
+                <h2>Array Form</h2>
+                <form action="arrayDemo.php" method="POST">
+                    <p>Please input a number for rows:
+                        <input type="text" size="20" name="rows">
+                    </p>
+                    <p>Please input a number for columns:
+                        <input type="text" size="20" name="columns">
+                    </p>
+                    <p>Please input a minimum random value:
+                        <input type="text" size="20" name="minimumRandomValue">
+                    </p>
+                    <p>Please input a maximum random value:
+                        <input type="text" size="20" name="maximumRandomValue">
+                    </p>
+
+                    <p><input type="submit" value="Submit"> <input type="reset" value="Clear and start again"></p>
+
+
+
+
+                </form>
+            </p>
+    </body>
+</html>
