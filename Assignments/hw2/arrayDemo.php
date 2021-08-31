@@ -36,6 +36,7 @@
             $sum = array($rows); //create a 1d array to hold the sum values of size equal to the number of rows
 			$avg = array($rows); //create a 1D array to hold the average values of a size equal to the number of rows
 			$stdDev = 0; //initializes standard deviation to zero.
+            //standard deviation is Math.sqrt([each(value-mean)^2] / # of values)
 
             print("<p> Number of rows = $rows</p>"); //different print lines are treated as having a <br> tag.
             print("<p> Number of columns = $columns</p>");
@@ -79,26 +80,35 @@
 //               if($i == 0){
 //                   print("<th>Row</th>");
 //               }elseif ($i == 1) {
-//                print("<th>Sum</th>");
-//               }elseif ($i == 2) {
+//                print("<th>Sum</th>");                    //TODO: try printing the headers first side by side, then the rows of values.
+//               }elseif ($i == 2) {                                //use the above table printing as a blueprint
 //                print("<th>Avg</th>");
 //               }else {
 //                print("<th>Std Dev</th>");
 //               }
 //           }
 //           print("</tr>");
-			for($i = 0; $i < $rows; $i++) {
+
+			for($i = 0; $i < $rows; $i++) {  //this loop calculates the sum of each row and assigns it to the corresponding index in sum[]
 				$sum[$i] = 0;
 				for($j = 0; $j < $columns; $j++) {
 					$sum[$i] += $data[$i][$j];
 				}
 			}
+
+            for($i = 0; $i < $rows; $i++) {  //this loop calculates the sum of each row and assigns it to the corresponding index in sum[]
+                $avg[$i] = $sum[$i] / $columns; //the average in index i = the value in sum[i] divided by the number of columns?
+                                                //and assigns it to the corresponding position.
+            }
+
+
 			print("<table>");
 				//next step, create the $row_sums array
 				
 				
 				print("<pre>");//used for debugging
 				print_r($sum);//prints out the object
+                print_r($avg);//prints out the avg[] array object
 				print("</pre>");//close debugging
 			print("</table><br>");
 
