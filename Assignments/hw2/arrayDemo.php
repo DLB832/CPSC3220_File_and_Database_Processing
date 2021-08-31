@@ -29,11 +29,13 @@
 
     <body>
         <?php 
-            $rows = $_POST['rows'];
+            $rows = $_POST['rows']; //the number of rows
             $columns = $_POST['columns'];
             $minimumRandomValue = $_POST['minimumRandomValue']; 
             $maximumRandomValue =  $_POST['maximumRandomValue'];
             $sum = array($rows); //create a 1d array to hold the sum values of size equal to the number of rows
+			$avg = array($rows); //create a 1D array to hold the average values of a size equal to the number of rows
+			$stdDev = 0; //initializes standard deviation to zero.
 
             print("<p> Number of rows = $rows</p>"); //different print lines are treated as having a <br> tag.
             print("<p> Number of columns = $columns</p>");
@@ -48,17 +50,16 @@
                     //first for row 0 we push all the columns,
                     //then row 1, push a new value each time through this inner loop.
                     $data[$i][] = rand($minimumRandomValue,$maximumRandomValue); //value between 0,20, inclusive
-                    $sum[$i] = $sum[$i] + $data[i][]; // can I go ahead and add the value to the sum array for this row?
                     //the following will work as well:
                     //$data[$i][$j] = rand(0,20);
                 }
             }
-            //The table code below was taken and modified from the table.php file in our class' Google Drive
-            print("<table border = '3'><tr>");
-            //for($i = 0; $i < $columns; $i++) { //this for loop prints the columns at the top of the table
-                //print("<th>$i</th>"); 
-            //}
-            print("</tr>");
+			//The table code below was taken and modified from the table.php file in our class' Google Drive
+			print("<table border = '3'><tr>");
+			//for($i = 0; $i < $columns; $i++) { //this for loop prints the columns at the top of the table
+				//print("<th>$i</th>"); 
+			//}
+			print("</tr>");
 
             for($i = 0; $i < $rows; $i++) { //for rows
                 print("<tr>"); //prints the rows in the table
@@ -72,24 +73,35 @@
 
             //print("<p> The current sum for row 1 is: $sum[0]</p>");
             
-            print("<table border = '3'><tr>");
-            //TODO: This code is incredibly crude. If time fix.
-            for($i = 0; $i < 4; $i++) {
-               if($i == 0){
-                   print("<th>Row</th>");
-               }elseif ($i == 1) {
-                print("<th>Sum</th>");
-               }elseif ($i == 2) {
-                print("<th>Avg</th>");
-               }else {
-                print("<th>Std Dev</th>");
-               }
-           }
-           print("</tr>");
+//            print("<table border = '3'><tr>");
+//            //TODO: This code is incredibly crude. If time fix.
+//            for($i = 0; $i < 4; $i++) {
+//               if($i == 0){
+//                   print("<th>Row</th>");
+//               }elseif ($i == 1) {
+//                print("<th>Sum</th>");
+//               }elseif ($i == 2) {
+//                print("<th>Avg</th>");
+//               }else {
+//                print("<th>Std Dev</th>");
+//               }
+//           }
+//           print("</tr>");
+			for($i = 0; $i < $rows; $i++) {
+				$sum[$i] = 0;
+				for($j = 0; $j < $columns; $j++) {
+					$sum[$i] += $data[$i][$j];
+				}
+			}
+			print("<table>");
+				//next step, create the $row_sums array
+				
+				
+				print("<pre>");//used for debugging
+				print_r($sum);//prints out the object
+				print("</pre>");//close debugging
+			print("</table><br>");
 
-           //$sum[$rows]; //create a 1d array to hold the sum values of size equal to the number of rows
-           //$avg[$rows]; //same thing but for the average values
-           $stdDev = 0;
            // for each entry in row i, get the sum, avg, and standard deviation
           
            
