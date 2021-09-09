@@ -32,10 +32,11 @@
 
             $domainsCount = sizeof($domainsArray); //hold the size of the array
             $combinedDomainsArray = array(); //create a new array for concatenating the domain name and type together
-            for ($i=0; $i < $domainsCount - 1; $i++) { 
+            for ($i=0, $k=0; $i < $domainsCount - 1; $i++) { //can initialize multiple instance variables
                 $j = $i + 1; //for storing the domain type
-                $combinedDomainsArray[$i] = "$domainsArray[$i]" .".". "$domainsArray[$j]"; //new array is a concatenation of the domain, dot, domain type
+                $combinedDomainsArray[$k] = "$domainsArray[$i]" .".". "$domainsArray[$j]"; //new array is a concatenation of the domain, dot, domain type
                 $i++; //we want to incriment twice
+                $k++; //once added, need to incriment the indek $k for the combined array
             }
 
             print("<pre>");
@@ -111,7 +112,7 @@
             $streetTypes = fgets($streetTypesFile); //pulls the data line by line. NOTE: fgets() keeps the new line characters
             fclose($streetTypesFile); //closes the file for the OS.
             
-            $streetTypes = str_replace(array("\n", "\r"), '', $streetTypes); //removes the new line characters from the string and casts it into an array
+            $streetTypes = str_replace(array("\n", "\r"), '', $streetTypes); //removes the new line characters from the string and replaces it with a blank char
 
             $streetTypesArray = explode("..;", $streetTypes); //explode() removes the specified delimiter 
 
@@ -121,22 +122,41 @@
             print("</pre>");
 
 //TODO:generate an html table populated with 25 unique names, addresses, and email addresses. 
-            $fullNames[] = array();//names array with unique first and last name 
-            for ($i=0; $i < 25; $i++) { 
+            $numberOfCustomers = 25;
+            $fullNames[] = array();//names array with unique first and last name. specifying the [] means its not an associative array? 
+            $emails[] = array(); //can create emails at the same time and save ourselves a step
+            for ($i=0; $i < $numberOfCustomers; $i++) { 
                 $firstNameGenerator = rand(0, sizeof($firstNamesArray)-1);//generates a random value for the first name. neecds to be size -1 to include the final indexes.
                 $lastNameGenerator = rand(0, sizeof($lastNamesArray)-1);//generates a random value for the last name
+                $emailGenerator = rand(0, sizeof($combinedDomainsArray)-1);//generates a random email domain
                 $newName = "$firstNamesArray[$firstNameGenerator]" . " " . "$lastNamesArray[$lastNameGenerator]";
-                if (in_array($newName,$fullNames)) {//tests to see if the new name is already in the array
-//TODO:try again. can this be done without making a function?
+                $newEmail = "$firstNamesArray[$firstNameGenerator]" . "." . "$lastNamesArray[$lastNameGenerator]" . "@" . "$combinedDomainsArray[$emailGenerator]";
+                if ($newName !=in_array($newName,$fullNames)) {//if new name is not in the array already add it
+                    $fullNames[$i] = $newName;
+                    $emails[$i] = $newEmail;
                 }
-                $fullNames[$i] = $newName;
             }
             print("<pre>");//for debugging
+            print("<h1>Full Names & Emails</h1>");
             print_r($fullNames);//for debugging
+            print_r($emails);//for debugging
             print("</pre>");//for debugging
+
             $streetAddress = array();//address array with random generated numbers and street address
-            $houseNumber = rand(0, 999);//generates a random number between 0 and 999 inclusively
-            //email first name + . + last name + domain
+            for ($i=0; $i < $numberOfCustomers; $i++) { 
+                $houseNumber = rand(0, 999);//generates a random number between 0 and 999 inclusively
+                $streetNameGenerator = rand(0, sizeof($streetNamesArray)-1);//generates a random value for the street name. neecds to be size -1 to include the final indexes.
+                $streetTypeGenerator = rand(0, sizeof($streetTypesArray)-1);//generates a random value for the street type
+                $newStreetAddress = "$houseNumber" . " " . "$streetNamesArray[$streetNameGenerator]" . " " . "$streetTypesArray[$streetTypeGenerator]";
+                if ($newStreetAddress !=in_array($newStreetAddress ,$streetAddress)) {//if new address is not in the array already add it
+                    $streetAddress[$i] = $newStreetAddress;
+                }
+            }
+            print("<pre>");//for debugging
+            print("<h1>Street Addresses</h1>");
+            print_r($streetAddress);//for debugging
+            print("</pre>");//for debugging
+         
 
         ?>
     </body>
