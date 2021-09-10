@@ -125,6 +125,9 @@
             $numberOfCustomers = 25;
             $fullNames[] = array();//names array with unique first and last name. specifying the [] means its not an associative array? 
             $emails[] = array(); //can create emails at the same time and save ourselves a step
+//TODO:the below two arrays are not an efficient use of space. Fix them if you have the time!
+            $uniqueFirstNames[] = array(); //corresponds to the $fullNames[] for table processing.
+            $uniqueLastNames = array();
             for ($i=0; $i < $numberOfCustomers; $i++) { 
                 $firstNameGenerator = rand(0, sizeof($firstNamesArray)-1);//generates a random value for the first name. neecds to be size -1 to include the final indexes.
                 $lastNameGenerator = rand(0, sizeof($lastNamesArray)-1);//generates a random value for the last name
@@ -134,11 +137,16 @@
                 if ($newName !=in_array($newName,$fullNames)) {//if new name is not in the array already add it
                     $fullNames[$i] = $newName;
                     $emails[$i] = $newEmail;
+//TODO:remove these two when fixing and making algorithm effective.
+                    $uniqueFirstNames[$i] = "$firstNamesArray[$firstNameGenerator]";
+                    $uniqueLastNames[$i] = "$lastNamesArray[$lastNameGenerator]"; 
                 }
             }
             print("<pre>");//for debugging
             print("<h1>Full Names & Emails</h1>");
-            print_r($fullNames);//for debugging
+            print_r($fullNames);
+            print_r($uniqueFirstNames);//for debugging
+            print_r($uniqueLastNames);//for debugging
             print_r($emails);//for debugging
             print("</pre>");//for debugging
 
@@ -156,7 +164,29 @@
             print("<h1>Street Addresses</h1>");
             print_r($streetAddress);//for debugging
             print("</pre>");//for debugging
-         
+
+            //Table info and customers.txt writing
+//NOTE: php writing to output with new line character found at: https://stackoverflow.com/questions/3066421/writing-a-new-line-to-file-in-php-line-feed
+            $outputFile = fopen("customers.txt", "w") or die ("Unable to open file!");//this creates an output file with the writeable permission.
+            //if can't open, kills the writing and outputs a message to the user.
+			print("<table border = 3>");
+            print("<th>First Name</th>");
+            print("<th>Last Name</th>");
+            print("<th>Address</th>");
+            print("<th>Email</th>");
+            for($i = 0; $i < $numberOfCustomers; $i++) { //for each of the rows in your $rows.
+                $customerData = "$uniqueFirstNames[$i]".":"."$uniqueLastNames[$i]".":"."$streetAddress[$i]".":"."$emails[$i]"."\n";
+                fwrite($outputFile, $customerData); //writes the data to the specified file.
+                print("<tr>"); //starts the table row tag
+                    print("<td>".$uniqueFirstNames[$i]."</td>"); //needs to print the first name
+                    print("<td>".$uniqueLastNames[$i]."</td>"); //prints the last name
+                    print("<td align='center'>".$streetAddress[$i]."</td>"); //prints the address
+                    print("<td align='center'>".$emails[$i]."</td>"); //prints the email
+                    print("</tr>");
+            }
+            print("</table><br>");
+            fclose($outputFile);
+
 
         ?>
     </body>
