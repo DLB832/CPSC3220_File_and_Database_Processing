@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--Author: Derek Campbell
+    Date: September 22, 2021
+    File: movieInfo.html
+    Purpose: To create a form that accepts four fields:
+             movie_id
+             title
+             price
+             release_date-->
+
+
+<html>
+    <head>
+        <title>Movie Info</title> <!-- Sets the title in the window-->
+    </head>    
+    <body>
+        <h1>Movie Info</h1>
+            <p>
+                <!--uses a form to ask for input for:
+                movie id,
+                movie title,
+                ticket price,
+                & release date-->
+                <!--NOTE: submit button takes user to updateInfo.php-->
+                <h2>Movie Info Form</h2>
+                <form action="updateInfo.php" method="POST">
+                    <p>Please input a number for the movie ID following the "ABC1234" format:
+                        <input type="text" size="20" name="movie_id">
+                    </p>
+                    <p>Please input a name for movie title with only alphabetical characters between 1 and 30 characters long:
+                        <input type="text" size="20" name="title">
+                    </p>
+                    <p>Please input a value for the movie ticket price in the "$X.xx" format between $0.99 and $99.99:
+                        <input type="text" size="20" name="price">
+                    </p>
+                    <p>Please input a date for the movie's release date in the "M/D/YYYY" format:
+                        <input type="text" size="20" name="release_date">
+                    </p>
+
+                    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+
+                </form>
+            </p>
+    </body>
+</html>
