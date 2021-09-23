@@ -1,4 +1,4 @@
-<!Doctype html>
+!Doctype html>
 <!--Author: Derek Campbell
     Date: September 22, 2021
     File: updateInfo.html
@@ -67,6 +67,21 @@
             //fputs($fileVariable, $what'sBeingWritten) : is the function to write to a file
             fputs($movieInfoFile, "$movie_id".":"."$title".":"."$price".":"."$release_date\n");
             fclose($movieInfoFile); //always close the file after using it to prevent buffer errors.
+
+//Copying movieInfo.txt into array for table processing
+//TODO: a variation of the code below. Should copy each entry into a 2d assosiative array
+//TODO: needs to explode the info by the : delimiter and store each data in array index.
+//$movieInfoArray looks like:
+//        [0] --> ["movie_id"]["title"]["price]"["release_date"]
+//        [1] --> ["movie_id_2"]["title_2"]["price_2"]["release_date_2"] etc.
+//while (!feof($movieInfoFile)) { 
+//    $movieInfoFromFile = fgets($movieInfoFile);                                       //read a name (one line)
+//    $movieInfoFromFile = str_replace(array("\n", "\r"), '', $movieInfoFile);              //remove newlines
+//    if (!feof($movieInfoFile)) {
+//        $movieInfoArray[] = $movieInfoFromFile; //would still keep the delimiters. TODO: explode delimiters
+//    }
+//}
+//fclose($movieInfoFile);
 
 //Movie Info Table
 /**TODO: once new data has been received, you should display ALL data that has been entered into the text file from your PHP script into
