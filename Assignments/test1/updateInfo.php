@@ -1,4 +1,4 @@
-!Doctype html>
+<!Doctype html>
 <!--Author: Derek Campbell
     Date: September 22, 2021
     File: updateInfo.html
@@ -27,12 +27,11 @@
             <!--TODO: if ANY field has invalid data, display an error message and a link back to the movieInfo.html page.-->
             <!--If all fields are valid, save the data to movieInfo.txt in the following format and sorted by movie_id:
                             MovieID:Title:Cost:ReleaseDate\n
-                NOTE: will need to read in the existing file's data and add the new data to your data structure, and sort it before you can write the
+                will need to read in the existing file's data and add the new data to your data structure, AND SORT IT before you can write the
                     new file in proper order.
                     put each record on it's own line -->
-            <!--TODO: once new data has been received, you should display ALL data that has been entered into the text file from your PHP script into
+            <!--once new data has been received, you should display ALL data that has been entered into the text file from your PHP script into
                     an html table. EACH FIELD SHOULD GO IN IT'S OWN TABLE CELL. Table sorted by movie_id just like the .txt file. -->
-            <!--TODO: after successfully displaying your table, create a link back to the movieInfo.html page -->
         </p>
 
     <body>
@@ -41,28 +40,8 @@
             $title = $_POST['title'];
             $price = $_POST['price']; 
             $release_date =  $_POST['release_date'];
-//            $sum = array($rows); //create a 1d array to hold the sum values of size equal to the number of rows
-//			$avg = array($rows); //create a 1D array to hold the average values of a size equal to the number of rows
-//			$stdDev = array($rows); //creates a 1D array to hold the standard deviation value of each row.
-//            //standard deviation is Math.sqrt([each(value-mean)^2] / # of values)
 
-//            print("<p> Number of rows = $rows</p>"); //different print lines are treated as having a <br> tag.
-//            print("<p> Number of columns = $columns</p>");
-//            print("<p> Your array size is: $rows x $columns</p>");
-//            print("<p> Your minimum value is: $minimumRandomValue</p>");
-//            print("<p> Your maximum value is: $maximumRandomValue</p>");
-
-//            for($i = 0; $i < $rows; $i++) {
-//                for($j = 0; $j < $columns; $j++) {
-//                    //note the syntax below for a "push" operation
-//                    //we are pushing data on to the array
-//                    //first for row 0 we push all the columns,
-//                    //then row 1, push a new value each time through this inner loop.
-//                    $data[$i][$j] = rand($minimumRandomValue,$maximumRandomValue); //value between the minimum and maximum values, inclusivey
-//                }
-//            }
-
-//Saving Data to movieInfo.txt file //does not add to, only replaces
+//Saving Data to movieInfo.txt file
             $movieInfoFile = fopen("movieInfo.txt", "a+"); //allows reading and writing to the movieInfo.txt file places file marker at end of file. 
             //NOTE: w replaces a file if it already exists. Use a different permission?
                     //a+ should allow for appending to the end of the file without overriting it. TODO: test on PC. incorrect permissions on linux.
@@ -71,48 +50,56 @@
             fclose($movieInfoFile); //always close the file after using it to prevent buffer errors.
 
 //Copying movieInfo.txt into array for table processing
-//TODO: a variation of the code below. Should copy each entry into a 2d assosiative array
-//TODO: needs to explode the info by the : delimiter and store each data in array index.
-//$movieInfoArray looks like:
-//        [0] --> ["movie_id"]["title"]["price]"["release_date"]
-//        [1] --> ["movie_id_2"]["title_2"]["price_2"]["release_date_2"] etc.
-//while (!feof($movieInfoFile)) { 
-//    $movieInfoFromFile = fgets($movieInfoFile); //reads the file line by line
-//    $movieInfoFromFile = str_replace(array("\n", "\r"), '', $movieInfoFile); //NOTE: DELETE? remove newlines. can this be here?
-//    if (!feof($movieInfoFile)) {
-//        $movieInfoString = $movieInfoFromFile; //would still keep the delimiters, but will keep the line as a string.
-//    }
-//}
-//fclose($movieInfoFile);
-//    $movieInfoString = str_replace(array("\n", "\r"), '', $movieInfoString);//replace all new line characters and return line characters with blank spaces
-//    $movieInfoArray = explode(":", $movieInfoString);//at each : delimiter, starts a new index in an array.
+//        $movieData array looks like:
+//        [movie_id] --> ["title"]["price]"["release_date"]
+//        [Movie_id_2] --> ["title_2"]["price_2"]["release_date_2"] etc.
+
+            $movieInfoFile = fopen("movieInfo.txt", "r");
+            while (!feof($movieInfoFile)) { 
+                $movieInfoString = fgets($movieInfoFile); //reads the file line by line
+                $movieInfoString = str_replace(array("\n", "\r"), '', $movieInfoString);//replace all new line characters and return line characters with blank spaces
+                $movieInfoArray = explode(":", $movieInfoString);//at each : delimiter, starts a new index in an array.
+                if (!feof($movieInfoFile)) {
+                    $key = $movieInfoArray[0];//sets the key as the 0th index or the movie_id
+                    $movieData[$key] = $movieInfoArray; // still an array.
+                    //in the associative array, each key (movie_id) is associated with a value, the movie. 
+                }
+            }
+            fclose($movieInfoFile);
+
+//Sorting the data before writing it to a new movieInfo.txt file
+            ksort($movieData, SORT_STRING); //$key sorts the values
+            $movieInfoFile = fopen("movieInfo.txt", "w"); //gives writing permission AND will erase the previous file
+			//https://www.php.net/manual/en/control-structures.foreach.php
+			foreach($movieData as $key => $value) {
+                $data = "$value[1]:$value[2]:$value[3]"; //converts the non key data in the array into a string
+				//print("<p>$key:$data</p>");   //for debugging
+				fputs($movieInfoFile, $key.":".$data."\n");
+			}
+			fclose($movieInfoFile);
 
 
 //Movie Info Table
-/**TODO: once new data has been received, you should display ALL data that has been entered into the text file from your PHP script into
-        an html table. EACH FIELD SHOULD GO IN IT'S OWN TABLE CELL. Table sorted by movie_id just like the .txt file.*/
-			$numberOfEntries = sizeof($movieInfoArray); //stores a value for the number of rows in the table
             print("<table border = 3>");
 				
                 print("<th>Movie ID</th>");
                 print("<th>Title</th>");
                 print("<th>Cost</th>");
                 print("<th>Release Date</th>");
-                for($i = 0; $i < $numberOfEntries; $i++) { //for each of the rows in your file.
+                foreach ($movieData as $key => $value) { //for each of the rows in your file.
                     print("<tr>"); //starts the table row tag
-                        print("<td>$movie_id[$i]</td>"); //here is table data for your row
-                        print("<td align='center'>".$title[$i]."</td>"); //here is another data for your row
-                        print("<td align='center'>".$price[$i]."</td>"); //etc.
-                        print("<td align='center'>".$release_date[$i]."</td>");
+                        print("<td>".$value[0]."</td>"); //this pulls the movie_id from the array associated with $key
+                        print("<td>".$value[1]."</td>"); //etc.
+                        print("<td>".$value[2]."</td>");
+                        print("<td>".$value[3]."</td>");
                         print("</tr>");
                 }
-				
-			print("</table><br>");
+			print("</table><br>"); 
 
 
-            print("<pre>");//used for debugging
-                print_r($movie_id);//WORKS.
-			print("</pre>");//close debugging
+//            print("<pre>");//used for debugging
+//                print_r($movieData);
+//			print("</pre>");//close debugging
 
         ?>
 
