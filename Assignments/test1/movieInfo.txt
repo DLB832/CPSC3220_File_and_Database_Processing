@@ -1,1 +1,3 @@
-DEF5678:Sahara:$15.47:2/22/2003
+ABC1234:Sahara:$9.99:1/20/1996
+DEF5678:Pokemon:$19.95:5/12/1995
+ZZZ9999:Correct  date test:$0.00:1/8/2020

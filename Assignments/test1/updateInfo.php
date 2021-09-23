@@ -1,8 +1,8 @@
 <!Doctype html>
 <!--Author: Derek Campbell
-    Date: September 22, 2021
+    Date: September 23, 2021
     File: updateInfo.html
-    Purpose: TODO: checks the data submitted by movieInfo.html for proper formatting-->
+    Purpose: checks the data submitted by movieInfo.html for proper formatting before processing input to a .txt file-->
 <!--NOTE: CHECK 09-09 FILE-IO-ASSOCIATIVE-ARRAY FOR GUIDE!!!! -->    
 
     <html>
@@ -24,7 +24,7 @@
                         no leading zeros in single digit months/days && whole year should be included in input
                         years must be between 1900 and 2025 (allowing future releases up to 12/31/2025)
                     check that the month is between 1-12 && day is between 1-## of appropriate days in the month-->
-            <!--TODO: if ANY field has invalid data, display an error message and a link back to the movieInfo.html page.-->
+            <!--if ANY field has invalid data, display an error message and a link back to the movieInfo.html page.-->
             <!--If all fields are valid, save the data to movieInfo.txt in the following format and sorted by movie_id:
                             MovieID:Title:Cost:ReleaseDate\n
                 will need to read in the existing file's data and add the new data to your data structure, AND SORT IT before you can write the
@@ -47,6 +47,7 @@
             //NOTE: learned this method at https://www.w3schools.com/php/php_regex.asp
             //NOTE cont: and at https://www.phpliveregex.com/ 
             //preg_match() will return 1 if there is a match for the pattern in the string and a 0 if there is not
+		//movie_id validation test
             $movieIdpattern = "/[A-Z]{3}[0-9]{4}/"; //this pattern specifies there must be exactly 3 characters A-Z and exactly 4 characters 0-9.
             if(preg_match($movieIdpattern, $movie_id) != 1){ // if it is 1 means the correct pattern is present. a 0 indicates an error
                 print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
@@ -55,6 +56,7 @@
                 $validData = false;
             }
             
+		//title validation test
             $titlePattern = "/[^ A-Z]/i"; //the inclusion if the option i makes the search case insensitive. The inclusion of the ^ means not present.
             if(preg_match($titlePattern, $title) == 1 || $titleLength > 30){ // in this case, we are looking for non-alphabetical characters. a 1 here indicates an error
                 print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
@@ -63,6 +65,7 @@
                 $validData = false;
             }
 
+		//price validation test
             $pricePattern = "/[$][0-9]{1,2}[.][0-9]{2}\z/"; // \z specifies this MUST be the end of the string.
             //specifies the string must start with $ followed by 1 or 2 #'s 0-9 followed by a period, then 2 #'s for the cents.
             if(preg_match($pricePattern, $price) != 1){ // if it is 1 means the correct pattern is present. a 0 indicates an error
@@ -71,13 +74,24 @@
                 print("Please try again.\n");
                 $validData = false;
             }
-            $startDate = DateTime::createFromFormat('!n/j/Y', '1/1/1900');
-            $endDate = DateTime::createFromFormat('!n/j/Y', '12/31/2025');
+			
+		//release_date validation test
+			//Try validating by exploding the release_date and comparing against appropriate values in nested if's
+			$releaseDateInfoString = str_replace(array("\n", "\r"), '', $release_date);//replace all new line characters and return line characters with blank spaces
+            $releaseDateInfoArray = explode("/", $releaseDateInfoString);//at each / delimiter, starts a new index in an array.
+			// looks like this: [M]([D]or[DD])[YYYY]
+			//by exploding, we can store a reference to specifically the year and then compare there.
+			$validStartYear = 1900; //the allowed starting year.
+			$validEndYear = 2025;	//the allowed ending year.
+			$releaseDateYear = $releaseDateInfoArray[2]; //stores reference to JUST the year
+            $endDate = DateTime::createFromFormat('n/j/Y', '12/31/2025');
+            $startDate = DateTime::createFromFormat('n/j/Y', '1/1/1900');
             //NOTE: this method was taken and modified from https://stackoverflow.com/questions/44549229/how-to-validate-dates-without-leading-zero-on-day-and-month
                 //  and https://www.php.net/manual/en/datetime.createfromformat.php 
-            if (($d=DateTime::createFromFormat('n/j/Y', $release_date)) && ($release_date==$d->format('n/j/Y'))){//} && ($startDate <= $release_date) && ($release_date <= $endDate)){
+            if (($d=DateTime::createFromFormat('n/j/Y', $release_date)) && ($release_date==$d->format('n/j/Y')) && ($validStartYear <= $releaseDateYear) && ($releaseDateYear <= $validEndYear)){
             // valid. Do nothing
             //NOTE: adding the ! to reset the time stamp is causing errors. so is comparing the dates.
+					//print("date is in the correct format!"); //just for debugging
             }else{
             // invalid
                 print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
@@ -85,7 +99,6 @@
                 print("Release Dates must also be between 1/1/1900 and 12/31/2025.\n");
                 print("Please try again.\n");
                 $validData = false;
-
             }
             
 
@@ -146,7 +159,8 @@
 			print("</table><br>"); 
 //Debugging
             //print("<pre>");//used for debugging
-                //print_r($movieData);
+            //    print_r($release_date);
+			//	print_r($releaseDateInfoArray);
 			//print("</pre>");//close debugging
             }else{
                 //do nothing?
