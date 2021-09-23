@@ -36,11 +36,60 @@
 
     <body>
         <?php 
-            $movie_id = $_POST['movie_id']; //gets 
+//Instance Variables
+            $movie_id = $_POST['movie_id']; //gets the data from the html form inputted by the user. 
             $title = $_POST['title'];
+            $titleLength = strlen($title);
             $price = $_POST['price']; 
             $release_date =  $_POST['release_date'];
+            $validData = true; //for determining if the data is valid and usable. Assumes true?
+//Input Validation and Error Handling
+            //NOTE: learned this method at https://www.w3schools.com/php/php_regex.asp
+            //NOTE cont: and at https://www.phpliveregex.com/ 
+            //preg_match() will return 1 if there is a match for the pattern in the string and a 0 if there is not
+            $movieIdpattern = "/[A-Z]{3}[0-9]{4}/"; //this pattern specifies there must be exactly 3 characters A-Z and exactly 4 characters 0-9.
+            if(preg_match($movieIdpattern, $movie_id) != 1){ // if it is 1 means the correct pattern is present. a 0 indicates an error
+                print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
+                print("Movie ID's should be in the format 'ABC1234'.\n");
+                print("Please try again.\n");
+                $validData = false;
+            }
+            
+            $titlePattern = "/[^ A-Z]/i"; //the inclusion if the option i makes the search case insensitive. The inclusion of the ^ means not present.
+            if(preg_match($titlePattern, $title) == 1 || $titleLength > 30){ // in this case, we are looking for non-alphabetical characters. a 1 here indicates an error
+                print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
+                print("Movie Titles should be only include alphabetical characters and be between 1 and 30 characters long.\n");
+                print("Please try again.\n");
+                $validData = false;
+            }
 
+            $pricePattern = "/[$][0-9]{1,2}[.][0-9]{2}\z/"; // \z specifies this MUST be the end of the string.
+            //specifies the string must start with $ followed by 1 or 2 #'s 0-9 followed by a period, then 2 #'s for the cents.
+            if(preg_match($pricePattern, $price) != 1){ // if it is 1 means the correct pattern is present. a 0 indicates an error
+                print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
+                print("Movie prices should be in the format '$#.##' and between $0.00 and $99.99.\n");
+                print("Please try again.\n");
+                $validData = false;
+            }
+            $startDate = DateTime::createFromFormat('!n/j/Y', '1/1/1900');
+            $endDate = DateTime::createFromFormat('!n/j/Y', '12/31/2025');
+            //NOTE: this method was taken and modified from https://stackoverflow.com/questions/44549229/how-to-validate-dates-without-leading-zero-on-day-and-month
+                //  and https://www.php.net/manual/en/datetime.createfromformat.php 
+            if (($d=DateTime::createFromFormat('n/j/Y', $release_date)) && ($release_date==$d->format('n/j/Y'))){//} && ($startDate <= $release_date) && ($release_date <= $endDate)){
+            // valid. Do nothing
+            //NOTE: adding the ! to reset the time stamp is causing errors. so is comparing the dates.
+            }else{
+            // invalid
+                print("I'm sorry, but it looks like you may have input some data incorrectly.\n");
+                print("release Dates should be in the format 'M/D/YYYY' without any leading zeros.\n");
+                print("Release Dates must also be between 1/1/1900 and 12/31/2025.\n");
+                print("Please try again.\n");
+                $validData = false;
+
+            }
+            
+
+    if( $validData == true){ //maybe can put all methods in here?
 //Saving Data to movieInfo.txt file
             $movieInfoFile = fopen("movieInfo.txt", "a+"); //allows reading and writing to the movieInfo.txt file places file marker at end of file. 
             //NOTE: w replaces a file if it already exists. Use a different permission?
@@ -95,12 +144,14 @@
                         print("</tr>");
                 }
 			print("</table><br>"); 
-
-
-//            print("<pre>");//used for debugging
-//                print_r($movieData);
-//			print("</pre>");//close debugging
-
+//Debugging
+            //print("<pre>");//used for debugging
+                //print_r($movieData);
+			//print("</pre>");//close debugging
+            }else{
+                //do nothing?
+                //print errors?
+            }
         ?>
 
         <a href="movieInfo.html">
