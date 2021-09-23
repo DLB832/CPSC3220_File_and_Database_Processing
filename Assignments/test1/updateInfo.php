@@ -3,6 +3,7 @@
     Date: September 22, 2021
     File: updateInfo.html
     Purpose: TODO: checks the data submitted by movieInfo.html for proper formatting-->
+<!--NOTE: CHECK 09-09 FILE-IO-ASSOCIATIVE-ARRAY FOR GUIDE!!!! -->    
 
     <html>
     <head>
@@ -62,8 +63,9 @@
 //            }
 
 //Saving Data to movieInfo.txt file //does not add to, only replaces
-            $movieInfoFile = fopen("movieInfo.txt", "w+"); //allows reading and writing to the movieInfo.txt file places file marker at end of file. 
+            $movieInfoFile = fopen("movieInfo.txt", "a+"); //allows reading and writing to the movieInfo.txt file places file marker at end of file. 
             //NOTE: w replaces a file if it already exists. Use a different permission?
+                    //a+ should allow for appending to the end of the file without overriting it. TODO: test on PC. incorrect permissions on linux.
             //fputs($fileVariable, $what'sBeingWritten) : is the function to write to a file
             fputs($movieInfoFile, "$movie_id".":"."$title".":"."$price".":"."$release_date\n");
             fclose($movieInfoFile); //always close the file after using it to prevent buffer errors.
@@ -75,24 +77,28 @@
 //        [0] --> ["movie_id"]["title"]["price]"["release_date"]
 //        [1] --> ["movie_id_2"]["title_2"]["price_2"]["release_date_2"] etc.
 //while (!feof($movieInfoFile)) { 
-//    $movieInfoFromFile = fgets($movieInfoFile);                                       //read a name (one line)
-//    $movieInfoFromFile = str_replace(array("\n", "\r"), '', $movieInfoFile);              //remove newlines
+//    $movieInfoFromFile = fgets($movieInfoFile); //reads the file line by line
+//    $movieInfoFromFile = str_replace(array("\n", "\r"), '', $movieInfoFile); //NOTE: DELETE? remove newlines. can this be here?
 //    if (!feof($movieInfoFile)) {
-//        $movieInfoArray[] = $movieInfoFromFile; //would still keep the delimiters. TODO: explode delimiters
+//        $movieInfoString = $movieInfoFromFile; //would still keep the delimiters, but will keep the line as a string.
 //    }
 //}
 //fclose($movieInfoFile);
+//    $movieInfoString = str_replace(array("\n", "\r"), '', $movieInfoString);//replace all new line characters and return line characters with blank spaces
+//    $movieInfoArray = explode(":", $movieInfoString);//at each : delimiter, starts a new index in an array.
+
 
 //Movie Info Table
 /**TODO: once new data has been received, you should display ALL data that has been entered into the text file from your PHP script into
         an html table. EACH FIELD SHOULD GO IN IT'S OWN TABLE CELL. Table sorted by movie_id just like the .txt file.*/
-			print("<table border = 3>");
+			$numberOfEntries = sizeof($movieInfoArray); //stores a value for the number of rows in the table
+            print("<table border = 3>");
 				
                 print("<th>Movie ID</th>");
                 print("<th>Title</th>");
                 print("<th>Cost</th>");
                 print("<th>Release Date</th>");
-                for($i = 0; $i < 4; $i++) { //for each of the rows in your $rows.
+                for($i = 0; $i < $numberOfEntries; $i++) { //for each of the rows in your file.
                     print("<tr>"); //starts the table row tag
                         print("<td>$movie_id[$i]</td>"); //here is table data for your row
                         print("<td align='center'>".$title[$i]."</td>"); //here is another data for your row
