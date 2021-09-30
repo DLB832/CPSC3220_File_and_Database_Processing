@@ -45,13 +45,14 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='a table for storing the product information';
 
 CREATE TABLE `order_item` (
-  `order_id` int(11) NOT NULL,
+  `order_id` int(11) DEFAULT NULL,
   `product_id` int(11) DEFAULT NULL,
   `quantity` int(11) DEFAULT NULL,
   `price` decimal(10,0) DEFAULT NULL,
-  PRIMARY KEY (`order_id`),
-  KEY `order_item_FK` (`product_id`),
-  CONSTRAINT `order_item_FK` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `order_item_FK` (`order_id`),
+  KEY `order_item_FK_1` (`product_id`),
+  CONSTRAINT `order_item_FK` FOREIGN KEY (`order_id`) REFERENCES `order` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `order_item_FK_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='a table for storing the ordered item information';
 
 CREATE TABLE `warehouse` (

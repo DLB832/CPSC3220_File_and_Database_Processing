@@ -1,4 +1,3 @@
-warehouse_name
 Fuscia
 Maroon
 Teal

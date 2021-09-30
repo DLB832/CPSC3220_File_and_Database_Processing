@@ -88,7 +88,7 @@
             $customer_columns = array("first_name", "last_name", "email", "phone", "address_id");
             $order_columns = array("customer_id", "address_id"); //randomly generated below
             $product_columns = array("product_name", "description", "weight", "base_cost");
-            $warehouse_columns = array("name");//, "address_id");
+            $warehouse_columns = array("name", "address_id");
             $order_item_columns = array("order_id", "product_id", "quantity", "price");
             $product_warehouse_columns = array("product_id", "warehouse_id",); //randomly generated below
 
@@ -134,7 +134,23 @@
                 $customerArray[$i][4] = $rand_address;
             }
 
-//Adds
+//Adds a random address_id as the foreign key for the warehouseArray[]
+            for ($i=0; $i < $WAREHOUSE; $i++) { 
+                $rand_address = rand(1, $ADDRESS);
+                $warehouseArray[$i][1] = $rand_address;
+            }
+
+//Adds a random order_id and product_id as the foreign keys for orderItemarray[] and shifts the read data over appropriately
+            for ($i=0; $i < $ORDER_ITEM ; $i++) { 
+                $temp1 = $orderItemArray[$i][0];
+                $temp2 = $orderItemArray[$i][1];
+                $rand_order_id = rand(1, $ORDERS);
+                $rand_product_id = rand(1, $PRODUCT);
+                $orderItemArray[$i][0] = $rand_order_id;
+                $orderItemArray[$i][1] = $rand_product_id;
+                $orderItemArray[$i][2] = $temp1;
+                $orderItemArray[$i][3] = $temp2;
+            }
 
 
             $handle = fopen("data.sql", "w");
@@ -143,26 +159,17 @@
             write_table($handle, "SuperStore", "order", $order_columns, $order_table);
             write_table($handle, "SuperStore", "product", $product_columns, $productArray);
             write_table($handle, "SuperStore", "warehouse", $warehouse_columns, $warehouseArray);
-            //write_table($handle, "SuperStore", "order_item", $order_item_columns, $order_table);
-            //write_table($handle, "SuperStore", "product_warehouse", $product_warehouse_columns, $order_table);
+            write_table($handle, "SuperStore", "order_item", $order_item_columns, $orderItemArray);
+            write_table($handle, "SuperStore", "product_warehouse", $product_warehouse_columns, $productWarehouse_table);
 
             fclose($handle);
 
 //Debugging
-            //print("<pre>");
-            //print("<h1>Address Info</h1>");
-            //print_r($addressArray);
-            //print("</pre>");
-
             print("<pre>");
-            print("<h1>Customer Info</h1>");
-            print_r($customerArray);
+            print("<h1>Order Item Array</h1>");
+            print_r($orderItemArray);
             print("</pre>");
 
-            //print("<pre>");
-            //print("<h1>Order Info</h1>");
-            //print_r($order_table);
-            //print("</pre>");
 //End of File            
         ?>
     </body>

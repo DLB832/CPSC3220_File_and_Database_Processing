@@ -1,4 +1,3 @@
-Street:City:State:Zip
 75092 Bashford Pass:Cincinnati:OH:45213
 308 Crownhardt Point:Ann Arbor:MI:48107
 3921 Menomonie Drive:Naples:FL:33961
