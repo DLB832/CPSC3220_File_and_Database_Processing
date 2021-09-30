@@ -29,7 +29,7 @@
             $WAREHOUSE = 25;
             $PRODUCT_WAREHOUSE = 1250;
 
-//Function for reading data WORKS!!!!
+//Function for reading data
             function get_array_data($fileName) {
                 $handle = fopen($fileName,"r");
                 while (!feof($handle)) {
@@ -83,13 +83,13 @@
 
             }
         }
-//Create an array of your table column names for inserting
+//Creates an array of your table column names for inserting
             $address_columns = array("street", "city", "state", "zip");
-            $customer_columns = array("first_name", "last_name", "email", "phone");//, "address_id");
+            $customer_columns = array("first_name", "last_name", "email", "phone", "address_id");
             $order_columns = array("customer_id", "address_id"); //randomly generated below
             $product_columns = array("product_name", "description", "weight", "base_cost");
             $warehouse_columns = array("name");//, "address_id");
-            $order_item_columns = array("product_id", "quantity", "price");
+            $order_item_columns = array("order_id", "product_id", "quantity", "price");
             $product_warehouse_columns = array("product_id", "warehouse_id",); //randomly generated below
 
 //Order Table (1 primary key with 2 foreign keys referenceing the address_id)
@@ -97,14 +97,21 @@
 		    for($i = 0; $i < $ORDERS; $i++) {
 		    	$rand_customer = rand(1, $CUSTOMERS);
 		    	$rand_address = rand(1, $ADDRESS);
-		    	//$movie_actor_table[$i][0] = $rand_movie;
-		    	//$movie_actor_table[$i][1] = $rand_actor;
-		    	//you can also put quotes around the int's
             
 		    	$order_table[$i][0] = $rand_customer;
 		    	$order_table[$i][1] = $rand_address;
             
 		    }
+//Product_Warehouse Table (1 primary key with 2 foreign keys)
+            //needs to pick a valid product_id and warehouse_id
+            for($i = 0; $i < $PRODUCT_WAREHOUSE; $i++) {
+		    	$rand_product = rand(1, $PRODUCT);
+		    	$rand_warehouse = rand(1, $WAREHOUSE);
+            
+		    	$productWarehouse_table[$i][0] = $rand_product;
+		    	$productWarehouse_table[$i][1] = $rand_warehouse;
+            
+		    }            
 
 //Write to data.sql file
             //write in this order:
@@ -117,15 +124,27 @@
             //product_warhouse
             $addressArray = get_array_data("ADDRESS_MOCK_DATA.txt");
             $customerArray = get_array_data("CUSTOMER_MOCK_DATA.txt");
+            $productArray = get_array_data("PRODUCT_MOCK_DATA.txt");
+            $warehouseArray = get_array_data("WAREHOUSE_MOCK_DATA.txt");
+            $orderItemArray = get_array_data("ORDER_ITEM_MOCK_DATA.txt"); //only has quantity and price in .txt file
+
+//Adds a random address-id as the foreign key for customerArray[]
+            for ($i=0; $i < $CUSTOMERS ; $i++) { 
+                $rand_address = rand(1, $ADDRESS);
+                $customerArray[$i][4] = $rand_address;
+            }
+
+//Adds
+
 
             $handle = fopen("data.sql", "w");
             write_table($handle, "SuperStore", "address", $address_columns, $addressArray);
             write_table($handle, "SuperStore", "customer", $customer_columns, $customerArray);
             write_table($handle, "SuperStore", "order", $order_columns, $order_table);
-            write_table($handle, "SuperStore", "product", $order_columns, $order_table);
-            write_table($handle, "SuperStore", "warehouse", $order_columns, $order_table);
-            write_table($handle, "SuperStore", "order_item", $order_columns, $order_table);
-            write_table($handle, "SuperStore", "product_warehouse", $order_columns, $order_table);
+            write_table($handle, "SuperStore", "product", $product_columns, $productArray);
+            write_table($handle, "SuperStore", "warehouse", $warehouse_columns, $warehouseArray);
+            //write_table($handle, "SuperStore", "order_item", $order_item_columns, $order_table);
+            //write_table($handle, "SuperStore", "product_warehouse", $product_warehouse_columns, $order_table);
 
             fclose($handle);
 
@@ -135,10 +154,10 @@
             //print_r($addressArray);
             //print("</pre>");
 
-            //print("<pre>");
-            //print("<h1>Customer Info</h1>");
-            //print_r($customerArray);
-            //print("</pre>");
+            print("<pre>");
+            print("<h1>Customer Info</h1>");
+            print_r($customerArray);
+            print("</pre>");
 
             //print("<pre>");
             //print("<h1>Order Info</h1>");
