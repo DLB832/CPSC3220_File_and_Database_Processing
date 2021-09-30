@@ -152,7 +152,7 @@
                 $orderItemArray[$i][3] = $temp2;
             }
 
-
+//Writes the data to the data.sql file for populating the database
             $handle = fopen("data.sql", "w");
             write_table($handle, "SuperStore", "address", $address_columns, $addressArray);
             write_table($handle, "SuperStore", "customer", $customer_columns, $customerArray);
@@ -165,10 +165,10 @@
             fclose($handle);
 
 //Debugging
-            print("<pre>");
-            print("<h1>Order Item Array</h1>");
-            print_r($orderItemArray);
-            print("</pre>");
+            //print("<pre>");
+            //print("<h1>Order Item Array</h1>");
+            //print_r($orderItemArray);
+            //print("</pre>");
 
 //End of File            
         ?>
