@@ -1,0 +1,751 @@
+product_name:weight:base_cost
+Trueblue - Blueberry Cranberry:2:$3.78
+Ham - Procutinni:1:$4.38
+Drambuie:6:$5.73
+Flounder - Fresh:4:$3.88
+The Pop Shoppe - Lime Rickey:7:$7.03
+Tomato - Tricolor Cherry:4:$1.36
+Tomatoes - Vine Ripe, Red:2:$3.88
+Wine - White Cab Sauv.on:8:$5.85
+Lamb - Leg, Boneless:7:$3.83
+Cognac - Courvaisier:5:$7.34
+Wine - Red, Pelee Island Merlot:8:$7.67
+Cup - Translucent 7 Oz Clear:9:$7.61
+Piping - Bags Quizna:9:$9.67
+Roe - Lump Fish, Black:9:$3.27
+Sage Ground Wiberg:6:$5.90
+Ice Cream - Fudge Bars:6:$2.06
+Cheese - St. Paulin:8:$6.54
+Turnip - Mini:4:$1.41
+Pepper Squash:8:$2.99
+Filter - Coffee:5:$4.17
+Beets - Golden:1:$9.55
+Pasta - Fettuccine, Egg, Fresh:2:$6.42
+Chicken - Leg, Boneless:8:$4.68
+Flax Seed:4:$8.19
+Absolut Citron:10:$1.12
+Oil - Food, Lacquer Spray:7:$3.03
+Napkin White - Starched:1:$3.32
+Lychee - Canned:10:$5.39
+Sword Pick Asst:9:$1.23
+Capers - Ox Eye Daisy:6:$0.24
+Clam - Cherrystone:4:$1.84
+Greens Mustard:10:$9.58
+Clams - Bay:8:$9.04
+Bread - Pain Au Liat X12:10:$7.74
+Sauce - Salsa:9:$9.75
+Muffin - Carrot Individual Wrap:4:$3.99
+Tortillas - Flour, 10:10:$1.34
+Rum - Spiced, Captain Morgan:8:$1.60
+Plasticknivesblack:1:$1.43
+Sea Bass - Whole:6:$3.06
+Quail - Whole, Boneless:1:$2.00
+Cookies Cereal Nut:5:$6.51
+Pasta - Agnolotti - Butternut:7:$7.59
+Ginger - Ground:8:$2.62
+Dates:2:$2.37
+Apple - Fuji:9:$5.35
+Beef - Short Loin:10:$5.61
+Fireball Whisky:5:$0.23
+Milk - Buttermilk:3:$0.26
+Mustard - Dijon:4:$0.78
+Petit Baguette:9:$6.13
+Broom - Angled:4:$4.72
+Champagne - Brights, Dry:6:$9.48
+Kellogs Raisan Bran Bars:1:$8.55
+Clams - Bay:1:$7.82
+Toamtoes 6x7 Select:8:$9.15
+Wooden Mop Handle:7:$1.24
+Mayonnaise:6:$8.68
+Pasta - Penne, Rigate, Dry:8:$3.81
+Salt - Celery:6:$3.13
+Cheese - Marble:8:$7.17
+Wine - Bourgogne 2002, La:4:$5.50
+Juice - V8 Splash:9:$4.43
+Wine - Chateau Bonnet:7:$9.48
+Chicken - Diced, Cooked:7:$4.78
+Tomatoes - Cherry:3:$2.26
+Coffee Caramel Biscotti:8:$1.81
+Apple - Granny Smith:4:$2.09
+Lemons:5:$0.99
+Hummus - Spread:10:$4.90
+Wine - Red, Cabernet Merlot:4:$1.09
+The Pop Shoppe - Grape:8:$9.22
+Mint - Fresh:5:$6.48
+Wine - Soave Folonari:4:$1.80
+Tomato Puree:1:$7.85
+Bread Crumbs - Panko:8:$3.33
+Mushrooms - Honey:2:$9.98
+Banana - Green:9:$0.51
+Table Cloth 81x81 White:7:$8.70
+Cheese - Goat:8:$2.42
+Steam Pan - Half Size Deep:6:$9.57
+Cheese - Wine:10:$2.01
+Lotus Root:1:$8.13
+Wine - George Duboeuf Rose:9:$3.76
+Sugar - Palm:6:$2.55
+Sage - Rubbed:8:$0.63
+Tea - Herbal - 6 Asst:7:$8.23
+Sprouts Dikon:3:$8.29
+Onions - Vidalia:6:$0.53
+The Pop Shoppe Pinapple:2:$1.49
+Mahi Mahi:7:$2.01
+Nectarines:8:$6.85
+Salami - Genova:9:$0.68
+Wine - Winzer Krems Gruner:6:$3.22
+Pasta - Angel Hair:9:$7.71
+Cod - Fillets:3:$9.48
+Chervil - Fresh:8:$5.64
+Bread - Hot Dog Buns:8:$0.20
+Pork - Chop, Frenched:6:$3.79
+Muffin Batt - Blueberry Passion:3:$7.44
+Skirt - 24 Foot:8:$2.16
+Rappini - Andy Boy:7:$4.08
+Sauce - Alfredo:2:$9.63
+Pasta - Penne Primavera, Single:2:$2.13
+Flower - Potmums:2:$8.12
+Chives - Fresh:7:$3.04
+Soup - Campbells Tomato Ravioli:4:$9.91
+Neckerchief Blck:6:$7.18
+Energy Drink Red Bull:7:$2.42
+Potatoes - Pei 10 Oz:7:$6.62
+Bag - Clear 7 Lb:7:$3.22
+Nestea - Iced Tea:9:$1.32
+Tart Shells - Savory, 2:3:$5.16
+Wine - Chenin Blanc K.w.v.:10:$6.67
+Blueberries - Frozen:5:$1.56
+Energy Drink Bawls:10:$6.54
+Tumeric:7:$3.89
+Salsify, Organic:2:$9.68
+Versatainer Nc - 9388:8:$7.33
+Bread - Wheat Baguette:7:$8.57
+Soup - Clam Chowder, Dry Mix:10:$3.57
+Turkey - Ground. Lean:5:$7.21
+Wine - Dubouef Macon - Villages:1:$1.55
+Bread Bowl Plain:6:$5.31
+Artichoke - Bottom, Canned:10:$3.53
+Instant Coffee:9:$6.54
+Quinoa:7:$8.16
+Longos - Grilled Salmon With Bbq:5:$8.00
+Rolled Oats:1:$4.18
+Cocoa Powder - Dutched:9:$0.34
+Soup Campbells Mexicali Tortilla:4:$1.64
+Passion Fruit:8:$1.84
+Potatoes - Instant, Mashed:5:$4.45
+Rum - White, Gg White:4:$0.22
+Water - Aquafina Vitamin:2:$3.47
+Veal - Loin:5:$5.84
+Wine - Niagara,vqa Reisling:4:$8.76
+Shrimp - 150 - 250:7:$3.59
+Flour - Fast / Rapid:1:$0.45
+Fish - Base, Bouillion:1:$6.16
+Bread - Rolls, Corn:10:$9.82
+Wine - George Duboeuf Rose:1:$2.55
+Vinegar - Raspberry:2:$6.30
+Vinegar - Raspberry:4:$0.01
+Egg - Salad Premix:9:$9.20
+Beans - Fine:10:$4.83
+Corn Meal:3:$4.02
+Liners - Baking Cups:8:$3.85
+Chocolate Eclairs:5:$5.77
+Cafe Royale:6:$1.91
+Ham - Virginia:7:$4.62
+Turkey - Breast, Boneless Sk On:2:$0.67
+Sauerkraut:3:$7.69
+Pork - Hock And Feet Attached:4:$2.26
+Fib N9 - Prague Powder:6:$5.25
+Parsley Italian - Fresh:3:$7.43
+Wine - Toasted Head:1:$0.49
+Syrup - Monin, Amaretta:8:$7.26
+Veal - Leg, Provimi - 50 Lb Max:3:$5.64
+Grenadine:4:$8.23
+Soup - Campbells Chicken:9:$8.33
+Island Oasis - Ice Cream Mix:2:$4.58
+Pastry - Apple Large:8:$9.77
+Creme De Banane - Marie:8:$9.43
+Stock - Veal, Brown:1:$1.49
+Dr. Pepper - 355ml:8:$6.40
+Juice - Apple, 341 Ml:3:$4.66
+Squash - Butternut:10:$9.29
+Appetizer - Mushroom Tart:10:$8.70
+Basil - Primerba, Paste:4:$6.04
+Puree - Pear:2:$1.24
+Ecolab - Medallion:9:$4.93
+Beef - Cooked, Corned:7:$2.49
+Miso - Soy Bean Paste:9:$3.29
+Wine - Red, Pelee Island Merlot:9:$4.04
+Quail - Jumbo Boneless:5:$6.25
+Squid - U - 10 Thailand:10:$3.19
+Cream - 10%:7:$4.68
+Juice Peach Nectar:1:$4.64
+Pork - Backs - Boneless:4:$1.74
+Coke - Classic, 355 Ml:9:$9.37
+Juice - Apple Cider:1:$6.80
+Wine - White, Riesling, Semi - Dry:9:$9.42
+Goldschalger:10:$2.46
+Corn - On The Cob:8:$7.79
+Pickerel - Fillets:5:$1.23
+Sage - Ground:3:$9.01
+Cornstarch:9:$9.82
+Wine - White, Riesling, Semi - Dry:10:$1.79
+Pork - Backs - Boneless:2:$2.30
+Wine - White, Chardonnay:4:$3.65
+Mace Ground:6:$8.71
+Tahini Paste:1:$8.73
+Loaf Pan - 2 Lb, Foil:4:$0.06
+Rambutan:10:$1.50
+Plasticknivesblack:2:$1.04
+Dried Cranberries:6:$6.24
+Garlic - Peeled:9:$9.11
+Oven Mitts - 15 Inch:5:$3.79
+Bread - Italian Corn Meal Poly:5:$2.02
+Wine - Magnotta - Belpaese:9:$2.98
+Chinese Foods - Chicken Wing:8:$1.71
+Haggis:3:$4.02
+Mushroom - Chanterelle Frozen:2:$7.93
+Blue Curacao - Marie Brizard:6:$4.41
+Pickerel - Fillets:3:$3.01
+Wine - Magnotta, Merlot Sr Vqa:4:$8.74
+Nantucket Pine Orangebanana:6:$0.21
+Oregano - Fresh:9:$8.65
+Greens Mustard:5:$6.94
+Sword Pick Asst:8:$8.08
+Wine - Vidal Icewine Magnotta:10:$0.88
+Wine - Magnotta - Cab Sauv:2:$8.98
+Ecolab Digiclean Mild Fm:6:$1.75
+Parsley - Dried:3:$4.35
+Cheese - Pied De Vents:10:$4.12
+Doilies - 10, Paper:4:$8.05
+Cilantro / Coriander - Fresh:5:$1.91
+Bandage - Finger Cots:7:$1.33
+Garam Marsala:9:$9.55
+Cheese - Montery Jack:9:$8.00
+Ostrich - Fan Fillet:2:$7.92
+Wine - Chablis 2003 Champs:7:$0.83
+Sage Derby:4:$8.70
+Chef Hat 25cm:5:$2.57
+Sesame Seed Black:4:$0.48
+Container - Foam Dixie 12 Oz:4:$8.29
+Bread - Multigrain:3:$2.58
+Flower - Dish Garden:10:$0.24
+Bread - White Mini Epi:4:$4.63
+Fond - Neutral:7:$6.51
+Cake - Bande Of Fruit:10:$8.15
+Butter Balls Salted:6:$2.18
+Squid - U - 10 Thailand:7:$1.67
+Baking Soda:5:$9.97
+Nut - Pistachio, Shelled:8:$6.60
+Milk - Skim:7:$6.46
+Tomato Puree:1:$6.07
+Vinegar - Tarragon:5:$0.78
+Sour Puss Sour Apple:10:$6.51
+Longos - Cheese Tortellini:10:$1.86
+Syrup - Golden, Lyles:1:$6.61
+Nut - Cashews, Whole, Raw:2:$0.13
+Sobe - Berry Energy:9:$9.38
+Beer - Mcauslan Apricot:1:$4.47
+Carbonated Water - Orange:4:$1.19
+Apron:7:$8.00
+Syrup - Monin - Granny Smith:2:$3.86
+Roe - White Fish:6:$9.07
+Pail With Metal Handle 16l White:4:$5.31
+Ice Cream Bar - Hageen Daz To:10:$10.00
+Venison - Striploin:10:$1.52
+Vector Energy Bar:1:$1.48
+Bowl 12 Oz - Showcase 92012:5:$9.92
+Halibut - Fletches:1:$3.26
+Tea - Herbal Orange Spice:9:$2.66
+Veal - Inside Round / Top, Lean:3:$9.60
+Pastry - Apple Large:9:$7.92
+Wasabi Paste:5:$7.27
+Juice - Tomato, 10 Oz:5:$8.50
+Banana Turning:8:$5.96
+Foil - 4oz Custard Cup:7:$4.00
+Pop - Club Soda Can:2:$4.14
+Soup - Campbells, Minestrone:2:$1.19
+Steel Wool:5:$7.66
+The Pop Shoppe - Cream Soda:8:$6.80
+Trout - Rainbow, Fresh:7:$6.30
+Bread - Raisin Walnut Oval:4:$7.21
+Rice - Brown:5:$5.14
+Soup - Campbellschix Stew:9:$2.29
+The Pop Shoppe - Root Beer:7:$0.32
+Onions - Pearl:4:$1.46
+Sponge Cake Mix - Vanilla:3:$1.98
+Coffee - Frthy Coffee Crisp:4:$8.09
+Raisin - Dark:3:$1.76
+Bread - Sour Batard:8:$2.56
+Papayas:5:$9.35
+Sausage - Blood Pudding:3:$9.44
+Wine - Magnotta, Merlot Sr Vqa:5:$6.70
+Vinegar - Balsamic:10:$7.78
+Oil - Shortening,liqud, Fry:8:$3.59
+Coffee - Hazelnut Cream:1:$9.10
+Wine - Barolo Fontanafredda:3:$2.75
+Cheese - Sheep Milk:3:$4.70
+Beer - Upper Canada Light:7:$1.74
+Skewers - Bamboo:5:$1.69
+Rhubarb:3:$3.17
+Beer - Tetleys:8:$8.26
+Tofu - Soft:10:$8.27
+Beef - Eye Of Round:6:$1.74
+Hagen Daza - Dk Choocolate:9:$9.38
+Bacon Strip Precooked:5:$2.21
+Soup - Campbells Pasta Fagioli:3:$7.40
+Cactus Pads:9:$0.64
+Eggwhite Frozen:10:$0.03
+Sachet:5:$2.40
+Soup - Campbells, Butternut:8:$9.49
+Beef Wellington:6:$3.88
+Veal - Striploin:3:$0.25
+Goulash Seasoning:7:$9.20
+Pears - Bartlett:9:$1.39
+Cheese Cloth No 100:8:$4.43
+Beef - Bones, Marrow:1:$7.41
+Curry Paste - Madras:5:$2.21
+Pasta - Spaghetti, Dry:5:$3.25
+Caviar - Salmon:5:$0.24
+Beans - Long, Chinese:7:$8.86
+Table Cloth 144x90 White:4:$1.64
+Cape Capensis - Fillet:4:$9.65
+Basil - Primerba, Paste:10:$7.08
+Lobster - Live:8:$8.37
+Squid Ink:4:$1.21
+Puree - Mango:8:$3.20
+Soup - Campbells, Creamy:8:$7.54
+Beans - Yellow:5:$8.52
+Cranberry Foccacia:2:$0.49
+Lamb - Leg, Boneless:8:$8.42
+Appetizer - Tarragon Chicken:10:$3.68
+Bread - Pita, Mini:5:$8.68
+Broom And Brush Rack Black:3:$2.83
+Figs:3:$6.18
+Curry Powder Madras:8:$0.68
+Rosemary - Dry:2:$1.62
+Lettuce - Baby Salad Greens:3:$4.78
+Tabasco Sauce, 2 Oz:1:$4.22
+Baking Powder:3:$0.08
+Cake - Mini Potato Pancake:5:$2.88
+Sloe Gin - Mcguinness:10:$7.89
+Bread - Dark Rye:4:$7.99
+Glaze - Apricot:1:$2.81
+Veal - Inside:7:$3.37
+Pork - Ham Hocks - Smoked:1:$9.21
+Tuna - Salad Premix:10:$9.62
+Nut - Pecan, Pieces:8:$1.97
+Oil - Hazelnut:6:$8.14
+Oil - Truffle, White:10:$7.67
+Milk - 1%:9:$1.05
+Amarula Cream:1:$7.03
+Potatoes - Mini Red:8:$6.18
+Garlic - Primerba, Paste:5:$6.81
+Chips - Miss Vickies:2:$8.06
+Split Peas - Yellow, Dry:8:$9.22
+Beef - Diced:7:$6.79
+Coffee - Colombian, Portioned:5:$9.07
+Pork Ham Prager:1:$2.21
+Ice Cream Bar - Oreo Cone:10:$4.34
+Bread - Bistro Sour:6:$9.24
+Raspberries - Frozen:6:$3.58
+Chutney Sauce:3:$4.36
+Chocolate - Pistoles, White:9:$7.17
+Appetizer - Smoked Salmon / Dill:5:$7.29
+Sugar - Palm:6:$8.95
+Yogurt - Blueberry, 175 Gr:3:$9.51
+Pork - Ground:2:$0.19
+Oil - Olive Bertolli:7:$3.12
+Extract - Lemon:3:$2.13
+Cranberries - Dry:7:$9.99
+Cheese - Roquefort Pappillon:5:$8.41
+Mousse - Banana Chocolate:3:$9.53
+Turnip - Wax:5:$7.90
+Coke - Classic, 355 Ml:9:$5.29
+Coffee - Cafe Moreno:1:$0.12
+Artichoke - Fresh:3:$9.89
+Goldschalger:6:$4.63
+Wine - Sherry Dry Sack, William:4:$3.68
+Bread Cranberry Foccacia:1:$3.88
+Pepper - Red Bell:1:$0.29
+Chocolate - Milk Coating:6:$8.34
+Latex Rubber Gloves Size 9:8:$1.15
+Egg Patty Fried:3:$9.81
+Napkin Colour:5:$9.70
+Pepper - Yellow Bell:4:$5.29
+Beans - Yellow:1:$9.70
+Tart Shells - Barquettes, Savory:1:$2.26
+Ice Cream Bar - Oreo Cone:9:$6.26
+Muffin Mix - Banana Nut:3:$6.11
+Cilantro / Coriander - Fresh:2:$2.76
+Nantucket Orange Juice:6:$0.93
+Bread - Bistro White:8:$9.19
+Lettuce Romaine Chopped:10:$5.05
+Parsley - Fresh:8:$9.54
+Strawberries - California:5:$8.15
+Chickensplit Half:7:$8.16
+Turkey - Breast, Boneless Sk On:10:$8.58
+Oven Mitts - 15 Inch:10:$2.34
+Tea - Herbal Orange Spice:5:$0.53
+V8 Splash Strawberry Banana:7:$6.35
+Molasses - Fancy:1:$6.62
+Salmon - Atlantic, Fresh, Whole:8:$1.34
+Foil - Round Foil:9:$8.49
+Pineapple - Golden:3:$3.77
+Veal - Brisket, Provimi, Bone - In:9:$8.66
+Table Cloth 53x69 White:10:$8.23
+Lettuce - Belgian Endive:2:$9.82
+Beer - Maudite:4:$4.43
+Soup - Campbells Mushroom:4:$2.12
+Browning Caramel Glace:9:$1.14
+Water - Evian 355 Ml:3:$5.58
+Pepsi - 600ml:8:$5.09
+Wine - Red, Cabernet Sauvignon:1:$7.88
+Calypso - Black Cherry Lemonade:8:$2.90
+Dc - Sakura Fu:6:$2.55
+Jam - Apricot:7:$5.50
+Chevril:9:$7.43
+Wine - White, Gewurtzraminer:4:$5.32
+Bread - Hamburger Buns:9:$7.76
+Yogurt - Banana, 175 Gr:1:$2.59
+Jam - Raspberry:10:$6.44
+Soup - French Onion:3:$4.12
+Lobak:6:$3.91
+Lettuce - California Mix:4:$4.52
+Salt - Kosher:10:$7.45
+Olives - Stuffed:5:$6.27
+Croissants Thaw And Serve:5:$6.48
+Bamboo Shoots - Sliced:5:$0.79
+Flour - So Mix Cake White:7:$9.91
+Longos - Burritos:1:$6.58
+Goat - Leg:9:$4.81
+Chocolate - Sugar Free Semi Choc:8:$9.43
+Wine - Cabernet Sauvignon:7:$6.64
+Pepper - Cubanelle:3:$2.56
+Sansho Powder:9:$3.50
+Temperature Recording Station:4:$9.28
+Steam Pan - Half Size Deep:10:$7.35
+Muffin Mix - Blueberry:9:$6.81
+Bacardi Mojito:2:$9.57
+Bar Energy Chocchip:6:$6.37
+Muffin - Zero Transfat:6:$4.90
+Bread - Italian Corn Meal Poly:5:$0.48
+Pasta - Fett Alfredo, Single Serve:2:$6.90
+Rosemary - Fresh:7:$1.82
+Longos - Chicken Caeser Salad:2:$6.04
+Leeks - Large:3:$9.98
+Longos - Cheese Tortellini:8:$4.31
+Flour - Bran, Red:6:$4.42
+Bacardi Limon:2:$1.36
+Tilapia - Fillets:2:$0.16
+Muffin Hinge Container 6:1:$2.79
+Bagel - Sesame Seed Presliced:3:$5.78
+Island Oasis - Wildberry:10:$8.94
+Beer - Guiness:9:$3.35
+Pasta - Cannelloni, Sheets, Fresh:1:$1.97
+Table Cloth 90x90 Colour:2:$8.26
+Pepper - Orange:6:$0.72
+Broom And Broom Rack White:1:$3.90
+Pasta - Canelloni, Single Serve:4:$6.10
+Coffee - Egg Nog Capuccino:5:$3.79
+Foam Dinner Plate:2:$1.96
+Wanton Wrap:3:$9.67
+Pork - Loin, Center Cut:4:$8.88
+Veal - Brisket, Provimi,bnls:5:$8.52
+Chinese Foods - Plain Fried Rice:1:$5.45
+Wild Boar - Tenderloin:7:$1.67
+Soda Water - Club Soda, 355 Ml:1:$3.61
+Fish - Scallops, Cold Smoked:1:$2.11
+Salmon - Canned:1:$1.71
+Cheese - Parmesan Cubes:1:$4.38
+Berry Brulee:1:$9.47
+Table Cloth 90x90 Colour:1:$8.97
+Herb Du Provence - Primerba:4:$7.70
+Veal - Ground:8:$4.00
+Onions Granulated:6:$9.67
+Crab - Imitation Flakes:5:$3.97
+Wine - Alsace Gewurztraminer:5:$5.51
+Lamb - Sausage Casings:7:$2.59
+Apple - Royal Gala:6:$8.94
+Beer - Maudite:7:$3.24
+Cheese - Cream Cheese:9:$9.28
+Cloves - Whole:2:$2.76
+Veal - Heart:5:$2.99
+Truffle Shells - White Chocolate:2:$8.88
+Cheese - Comtomme:10:$0.69
+Longos - Lasagna Veg:9:$8.24
+Liquid Aminios Acid - Braggs:4:$2.23
+Juice - Apple, 341 Ml:5:$4.98
+Beans - Fine:5:$3.67
+Squid - Tubes / Tenticles 10/20:6:$9.08
+Apple - Delicious, Golden:4:$0.15
+Cornish Hen:6:$8.38
+Skirt - 24 Foot:10:$8.84
+Canada Dry:9:$8.32
+Beef Striploin Aaa:10:$3.76
+Bols Melon Liqueur:10:$4.16
+The Pop Shoppe - Cream Soda:3:$2.38
+Carbonated Water - Blackcherry:8:$2.13
+Wine - Masi Valpolocell:6:$8.53
+Aspic - Clear:6:$6.03
+Pork Ham Prager:1:$4.28
+Ecolab Crystal Fusion:1:$7.51
+Yogurt - Assorted Pack:4:$4.78
+Spice - Onion Powder Granulated:6:$8.52
+Juice - Lime:10:$6.72
+Nacho Chips:6:$6.90
+Rootbeer:8:$9.89
+Bread - Kimel Stick Poly:7:$0.31
+Food Colouring - Pink:5:$1.11
+Red Currants:9:$0.36
+Otomegusa Dashi Konbu:5:$0.27
+Sambuca Cream:7:$1.36
+Kohlrabi:2:$0.78
+Beef - Short Loin:9:$7.16
+Jam - Apricot:10:$2.44
+Pork - Backs - Boneless:2:$4.43
+Bread - Italian Sesame Poly:3:$4.91
+Table Cloth 53x53 White:1:$9.88
+Compound - Pear:6:$7.65
+Pears - Anjou:7:$6.53
+Lemon Pepper:3:$0.20
+Magnotta Bel Paese Red:6:$0.29
+Cornflakes:4:$4.99
+Butter - Salted, Micro:2:$3.28
+Crackers - Soda / Saltins:2:$4.14
+Jam - Raspberry,jar:9:$9.78
+Tequila - Sauza Silver:1:$4.59
+Ecolab - Solid Fusion:2:$4.48
+Teriyaki Sauce:2:$0.03
+Juice - Orange, Concentrate:8:$4.44
+Juice - Tomato, 10 Oz:1:$6.66
+Potatoes - Parissienne:4:$2.81
+Rappini - Andy Boy:4:$1.66
+Bread Cranberry Foccacia:6:$3.08
+Muffin Hinge Container 6:7:$2.77
+Fudge - Cream Fudge:7:$9.47
+Huck Towels White:5:$4.25
+Anchovy Fillets:9:$7.31
+Island Oasis - Ice Cream Mix:3:$4.33
+Foam Cup 6 Oz:9:$3.00
+Alize Gold Passion:4:$7.96
+Liners - Banana, Paper:1:$4.70
+Kellogs Special K Cereal:8:$1.94
+Sauce - Fish 25 Ozf Bottle:7:$3.32
+Water - Aquafina Vitamin:6:$5.71
+Carbonated Water - Lemon Lime:4:$4.37
+Glass Clear 8 Oz:10:$5.67
+Beef - Montreal Smoked Brisket:3:$8.17
+Limes:2:$0.09
+Butcher Twine 4r:9:$4.30
+Placemat - Scallop, White:2:$8.92
+Soup - Campbells Asian Noodle:6:$2.12
+Bread - Rolls, Corn:6:$6.79
+Table Cloth 54x72 White:7:$7.07
+Blackberries:1:$8.16
+Pastry - Banana Tea Loaf:6:$3.40
+Beer - Maudite:6:$6.10
+Pastrami:10:$4.21
+Chicken - Wings, Tip Off:4:$2.31
+Red Cod Fillets - 225g:2:$4.88
+Wine - Red Oakridge Merlot:8:$0.93
+Bols Melon Liqueur:6:$4.48
+Samosa - Veg:1:$6.55
+Lamb - Racks, Frenched:7:$1.81
+Capon - Breast, Wing On:10:$7.59
+Cheese - Sheep Milk:7:$9.90
+Blueberries - Frozen:3:$0.76
+Eggroll:9:$1.10
+Oats Large Flake:8:$4.21
+Cheese - Le Cru Du Clocher:3:$5.85
+Wine - Sicilia Igt Nero Avola:2:$6.88
+Cake - Mini Cheesecake:5:$3.65
+Tart - Pecan Butter Squares:6:$6.85
+Steampan - Foil:3:$3.95
+Carrots - Mini Red Organic:8:$8.33
+Huck Towels White:1:$1.35
+Juice - Lagoon Mango:4:$3.99
+Onion - Dried:10:$5.54
+Soup V8 Roasted Red Pepper:5:$1.24
+Graham Cracker Mix:2:$3.60
+Evaporated Milk - Skim:1:$5.07
+Soup - Campbells Mushroom:5:$2.00
+Flower - Commercial Bronze:5:$9.51
+Longos - Grilled Veg Sandwiches:3:$3.39
+Soup - Campbells Chili:6:$6.85
+Cookies - Amaretto:2:$3.34
+Peppercorns - Green:9:$4.26
+Carbonated Water - Blackcherry:6:$7.29
+Tarragon - Primerba, Paste:2:$9.87
+Anisette - Mcguiness:2:$0.16
+Parsley Italian - Fresh:7:$3.23
+Remy Red:7:$5.90
+Oregano - Dry, Rubbed:7:$2.97
+Bonito Flakes - Toku Katsuo:2:$4.41
+Island Oasis - Cappucino Mix:5:$4.48
+Nectarines:6:$9.91
+Salmon - Sockeye Raw:1:$4.44
+Energy Drink Bawls:2:$8.90
+Horseradish Root:5:$9.73
+Grenadine:7:$8.17
+Oil - Truffle, White:3:$6.35
+Bar Mix - Lime:2:$4.62
+Eggplant - Regular:7:$3.65
+Beer - Upper Canada Lager:1:$4.50
+Wine - Red, Antinori Santa:10:$4.05
+Soup - Base Broth Beef:7:$4.26
+Chicken - Breast, 5 - 7 Oz:5:$5.95
+Cocoa Feuilletine:5:$2.73
+Creme De Menthe Green:6:$9.14
+Yogurt - Banana, 175 Gr:10:$6.47
+Pail - 4l White, With Handle:8:$4.41
+Anchovy Fillets:9:$5.06
+Compound - Pear:9:$4.54
+Nantucket Apple Juice:10:$6.35
+Clams - Bay:5:$1.42
+Sprouts - Baby Pea Tendrils:9:$4.82
+Shark - Loin:4:$1.85
+Quinoa:1:$5.41
+Tortillas - Flour, 8:9:$7.95
+Kiwi:1:$0.89
+Wine - Magnotta, White:1:$9.12
+Cheese - Parmigiano Reggiano:7:$0.32
+Wine - Blue Nun Qualitatswein:2:$3.57
+Flour - So Mix Cake White:9:$9.83
+Bar Mix - Lemon:5:$6.60
+Sprouts - Bean:7:$5.69
+Lettuce - Boston Bib:9:$3.46
+Pasta - Linguini, Dry:8:$2.08
+Puree - Pear:5:$1.20
+Wine - Wyndham Estate Bin 777:8:$3.59
+Juice - Prune:10:$1.03
+Sesame Seed Black:5:$0.42
+Garbage Bags - Black:8:$3.68
+Lemonade - Pineapple Passion:7:$5.36
+Turkey - Breast, Double:1:$2.13
+Tequila - Sauza Silver:10:$7.42
+Squid - Breaded:6:$6.27
+Mace:8:$6.09
+Cabbage - Red:8:$4.44
+Beans - Kidney, Canned:3:$1.61
+Cookies Oatmeal Raisin:6:$4.80
+Flour - Chickpea:3:$9.47
+Sauce - Gravy, Au Jus, Mix:10:$0.22
+Wine - Ej Gallo Sonoma:10:$4.48
+Soup - Campbells, Creamy:7:$7.23
+Sponge Cake Mix - Chocolate:1:$3.34
+Tart - Butter Plain Squares:8:$4.16
+Chips Potato All Dressed - 43g:1:$3.60
+Kahlua:1:$4.26
+Longan:6:$5.89
+Vodka - Lemon, Absolut:6:$3.49
+Bandage - Fexible 1x3:7:$0.53
+Potatoes - Instant, Mashed:2:$0.59
+Wine - Sake:2:$7.21
+Lid - High Heat, Super Clear:9:$5.26
+Cream Of Tartar:5:$5.88
+Coffee Decaf Colombian:5:$3.72
+Bread - Roll, Whole Wheat:1:$2.67
+Amarula Cream:9:$5.11
+Soup - Campbells:2:$2.68
+Cheese - La Sauvagine:9:$6.53
+Bread - Roll, Italian:10:$0.20
+Cookies - Englishbay Wht:5:$7.22
+Pork - Liver:6:$4.16
+Wasabi Paste:4:$0.26
+Sauce - White, Mix:6:$3.65
+Mix - Cappucino Cocktail:7:$2.39
+Sprouts - Baby Pea Tendrils:10:$1.48
+Papayas:8:$4.00
+Beans - Navy, Dry:10:$5.55
+Wine - White, Ej Gallo:5:$8.38
+Gloves - Goldtouch Disposable:9:$0.80
+Trueblue - Blueberry Cranberry:3:$1.31
+Truffle - Whole Black Peeled:7:$3.70
+Arctic Char - Fillets:5:$7.56
+Melon - Honey Dew:8:$1.53
+Cookies - Fortune:10:$4.61
+Icecream - Dstk Strw Chseck:5:$2.67
+Rice - Jasmine Sented:3:$2.47
+Pork - Tenderloin, Frozen:5:$8.44
+Cake - Miini Cheesecake Cherry:5:$0.12
+Walkers Special Old Whiskey:1:$4.10
+Bagel - 12 Grain Preslice:4:$4.03
+Mangoes:2:$3.59
+Puree - Pear:8:$9.63
+Coffee - 10oz Cup 92961:7:$6.12
+Mussels - Frozen:10:$2.56
+Oil - Safflower:7:$5.58
+Cut Wakame - Hanawakaba:4:$9.22
+Cheese - Swiss Sliced:5:$0.07
+Transfer Sheets:3:$2.27
+Onion - Dried:1:$1.17
+Onions - Red:9:$8.39
+Cake Slab:7:$6.81
+Syrup - Monin, Swiss Choclate:5:$9.66
+Fruit Mix - Light:7:$2.03
+Wine - Jafflin Bourgongone:7:$2.22
+Carbonated Water - Wildberry:6:$1.22
+Salt - Celery:8:$9.00
+Wine - Sauvignon Blanc:3:$7.67
+Wine - Prem Select Charddonany:3:$5.73
+Milk - Condensed:6:$0.28
+Gatorade - Xfactor Berry:7:$6.97
+Neckerchief Blck:5:$1.26
+Sansho Powder:3:$2.23
+Cheese - Romano, Grated:9:$1.62
+Chinese Foods - Pepper Beef:1:$4.07
+Syrup - Monin - Blue Curacao:7:$7.52
+Wine - Niagara,vqa Reisling:3:$2.93
+Banana - Leaves:7:$7.88
+Cheese - Asiago:9:$9.76
+Sauce - Hoisin:7:$8.42
+Pepsi, 355 Ml:8:$7.93
+Spice - Montreal Steak Spice:5:$7.44
+Artichokes - Knobless, White:7:$7.52
+Bread - Pumpernickel:2:$6.05
+Wine - Two Oceans Sauvignon:9:$2.20
+Wood Chips - Regular:1:$6.84
+Lentils - Green Le Puy:8:$8.55
+Lamb Shoulder Boneless Nz:8:$5.80
+Aspic - Clear:9:$9.99
+Rum - Mount Gay Eclipes:10:$7.45
+Beef - Kobe Striploin:7:$5.98
+Doilies - 10, Paper:3:$8.35
+Burger Veggie:4:$5.51
+Ice Cream Bar - Hageen Daz To:8:$0.37
+Tart Shells - Barquettes, Savory:3:$5.24
+Yogurt - French Vanilla:10:$0.10
+Cherries - Frozen:2:$3.51
+Milkettes - 2%:1:$2.02
+Wine - Casablanca Valley:4:$8.85
+Coffee - Irish Cream:9:$3.49
+Bag - Bread, White, Plain:8:$5.78
+Wine - Stoneliegh Sauvignon:1:$9.39
+Curry Paste - Green Masala:1:$9.17
+Bols Melon Liqueur:4:$7.92
+Salmon - Fillets:10:$9.04
+Island Oasis - Magarita Mix:8:$2.33
+Chick Peas - Dried:7:$4.50
+The Pop Shoppe - Lime Rickey:6:$3.33
+Flour - Semolina:2:$8.96
+Cookie - Oatmeal:7:$2.54
+Syrup - Monin, Irish Cream:4:$3.54
+Flower - Commercial Bronze:4:$5.06
+Cheese - Bakers Cream Cheese:3:$1.85
+Tomato Puree:5:$0.95
+Pie Filling - Cherry:5:$7.12
+Tea - Green:9:$6.36
+Beans - Black Bean, Canned:1:$4.29
+Butter - Salted, Micro:3:$9.15
+Beef - Tenderlion, Center Cut:3:$3.73
+Bread Base - Toscano:1:$6.27
+Ecolab - Medallion:2:$7.24
+Pasta - Detalini, White, Fresh:1:$6.90
+Bols Melon Liqueur:9:$0.35
+Chicken - Livers:1:$1.96
+Placemat - Scallop, White:9:$5.14
+Wine - Sawmill Creek Autumn:2:$3.24
+Pears - Bartlett:7:$6.04
+Jam - Apricot:7:$4.41
+Turkey Tenderloin Frozen:3:$3.00
+Beans - Kidney White:5:$0.31
+Silicone Parch. 16.3x24.3:7:$2.84
